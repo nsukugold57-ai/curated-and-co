@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Orders | Curated & Co.</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .custom-container {
+            max-width: 850px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .custom-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .custom-heading h2 {
+            color: #805c55;
+            font-size: 30px;
+        }
+
+        .custom-heading p {
+            color: #765f58;
+            line-height: 1.7;
+        }
+
+        .custom-form {
+            background: #fffaf7;
+            padding: 30px;
+            border: 1px solid #eadbd4;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .custom-form label {
+            display: block;
+            color: #674943;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .custom-form input,
+        .custom-form select,
+        .custom-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #d9c5bd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .custom-form textarea {
+            resize: vertical;
+        }
+
+        .custom-form button {
+            margin-top: 22px;
+            padding: 13px 25px;
+            background: #b8797a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .custom-form button:hover {
+            background: #8f5558;
+        }
+
+        .custom-note {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f7e9e6;
+            border-radius: 10px;
+            text-align: center;
+            color: #765f58;
+        }
+
+        @media (max-width: 600px) {
+            .custom-form {
+                padding: 20px;
+            }
+
+            .custom-heading h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Curated & Co.</h1>
+    <p>Thoughtfully Curated. Beautifully Gifted.</p>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="hampers.html">Hampers</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="custom_orders.html">Custom Orders</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="custom-container">
+
+    <section class="custom-heading">
+        <h2>Create Your Own Custom Hamper</h2>
+
+        <p>
+            Make someone's day extra special with a personalised
+            gift hamper. Tell us what you have in mind and
+            we'll help create something beautiful.
+        </p>
+    </section>
+
+    <form class="custom-form" id="custom-form">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number" required>
+
+        <label for="occasion">Occasion</label>
+        <select id="occasion" name="occasion" required>
+            <option value="">Select an occasion</option>
+            <option>Birthday</option>
+            <option>Baby Shower</option>
+            <option>Anniversary</option>
+            <option>Wedding</option>
+            <option>Graduation</option>
+            <option>Thank You Gift</option>
+            <option>Corporate Gift</option>
+            <option>Other</option>
+        </select>
+
+        <label for="budget">Your Budget (ZAR)</label>
+        <select id="budget" name="budget" required>
+            <option value="">Select your budget</option>
+            <option>R300 - R500</option>
+            <option>R500 - R700</option>
+            <option>R700 - R1,000</option>
+            <option>R1,000 - R1,500</option>
+            <option>Above R1,500</option>
+        </select>
+
+        <label for="recipient">Who is the hamper for?</label>
+        <input type="text" id="recipient" name="recipient"
+               placeholder="Example: Mother, friend, colleague">
+
+        <label for="details">Describe Your Ideal Hamper</label>
+        <textarea id="details" name="details" rows="5"
+                  placeholder="Tell us about your preferred colours, products, packaging and any special requests..."
+                  required></textarea>
+
+        <button type="submit">Send Custom Order Request</button>
+
+    </form>
+
+    <section class="custom-note">
+        <h3>Thoughtfully Made for Every Occasion</h3>
+
+        <p>
+            Every custom hamper is planned with care.
+            We will discuss your request, budget and
+            delivery arrangements before confirming your order.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <h2>Curated & Co.</h2>
+    <p>Thoughtfully Curated. Beautifully Gifted.</p>
+    <p>Email: curatedc3@gmail.com</p>
+    <p>Phone: 071 320 1343</p>
+    <p>&copy 2026 Curated & Co. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
